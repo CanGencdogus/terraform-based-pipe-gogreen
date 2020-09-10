@@ -7,6 +7,6 @@ module "iam_user1" {
 
   name = "rady-idiot"
 
-  create_iam_user_login_profile = false
-  create_iam_access_key         = false
+  #create_iam_user_login_profile = false
+  #create_iam_access_key         = false
 }
