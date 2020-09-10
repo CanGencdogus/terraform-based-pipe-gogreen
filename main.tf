@@ -3,6 +3,6 @@ provider "aws" {
 }
 
 resource "aws_s3_bucket" "testis" {
-        bucket = "Radko-test-rady-show-useful-lambda"
+        bucket = "radko-test-rady-show-useful-lambda"
         acl    = "public"
 }
