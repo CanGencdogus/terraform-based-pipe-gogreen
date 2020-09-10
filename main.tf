@@ -2,11 +2,11 @@ provider "aws" {
   region = "us-west-2"
 }
 
-module "iam_user1" {
-  source = "github.com/terraform-aws-modules/terraform-aws-iam"
+resource "aws_iam_user" "rady-idiot" {
+  name = "loadbalancer"
+  path = "/system/"
 
-  name = "rady-idiot"
-
-  #create_iam_user_login_profile = false
-  #create_iam_access_key         = false
+  tags = {
+    tag-key = "tag-value"
+  }
 }
