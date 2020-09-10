@@ -13,7 +13,7 @@ Parameters:
     Default: terraform-based-pipe-gogreen
   GitHubToken:
     Type: String
-    Default: 16045d36794044b5acaa282217ef5338bca4ba8c # use your auth token
+    Default: 6b975d87db01440ab690b69819213bacab7a89c4 # use your auth token
 Resources:
   SampleBuildProject:
     Properties:
