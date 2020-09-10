@@ -2,7 +2,11 @@ provider "aws" {
   region = "us-west-2"
 }
 
-resource "aws_s3_bucket" "testis" {
-        bucket = "radko-test-rady-show-useful-lambda"
-        acl    = "public"
+module "iam_user1" {
+  source = "github.com/terraform-aws-modules/terraform-aws-iam"
+
+  name = "rady-idiot"
+
+  create_iam_user_login_profile = false
+  create_iam_access_key         = false
 }
