@@ -1,1 +1,2 @@
 .pipeline.stacks/GoGreen-Pipeline-terraform.yml
+./pipeline.stacks
