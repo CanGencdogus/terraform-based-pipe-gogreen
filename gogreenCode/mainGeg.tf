@@ -14,7 +14,7 @@ provider "aws" {
 
 }
 resource "aws_s3_bucket" "gogreen" {
-  bucket = "goGreen-team1-bucket-102"
+  bucket = "gogreen-team1-bucket-102"
   acl    = "private"
 
   tags = {
