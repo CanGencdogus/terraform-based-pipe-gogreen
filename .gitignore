@@ -1,2 +1,3 @@
 .pipeline.stacks/GoGreen-Pipeline-terraform.yml
 ./pipeline.stacks
+./modules/terraform-aws-s3-bucket
