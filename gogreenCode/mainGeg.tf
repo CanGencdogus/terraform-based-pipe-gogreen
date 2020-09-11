@@ -1,6 +1,6 @@
   
   terraform {
-    
+
   backend "s3" {
     encrypt = true
     bucket  = "gogreen-3tier-tf-state-2"
@@ -14,7 +14,7 @@ provider "aws" {
 
 }
 resource "aws_s3_bucket" "gogreen" {
-  bucket = "GoGreen-team1-bucket-102"
+  bucket = "goGreen-team1-bucket-102"
   acl    = "private"
 
   tags = {
