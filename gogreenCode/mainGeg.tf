@@ -51,7 +51,7 @@ module "log_bucket" {
   force_destroy                  = true
   attach_elb_log_delivery_policy = true
 }
-#module "replica_bucket" {
+module "replica_bucket" {
   source = "./modules/terraform-aws-s3-bucket"
 
   providers = {
