@@ -1,16 +1,16 @@
 
 # main.tf
 
-terraform {
+#terraform {
 
-  #required_version = " < 4.0"
-  backend "s3" {
-    encrypt = true
-    bucket  = "gogreen-3tier-tf-state-2"
-    region  = "us-west-1"
-    key     = "terraform/state/gogreencdn.tfstate"
-  }
-}
+ # #required_version = " < 4.0"
+#  backend "s3" {
+#    encrypt = true
+#    bucket  = "gogreen-3tier-tf-state-2"
+#    region  = "us-west-1"
+#    key     = "terraform/state/gogreencdn.tfstate"
+#  }
+#}
 
 
 locals {
