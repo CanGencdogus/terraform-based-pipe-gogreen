@@ -1,3 +1,6 @@
+  
+  terraform {
+    
   backend "s3" {
     encrypt = true
     bucket  = "gogreen-3tier-tf-state-2"
