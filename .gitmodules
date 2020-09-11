@@ -1,0 +1,3 @@
+[submodule "project.sourcecoe"]
+	path = project.sourcecoe
+	url = https://github.com/rpaskalev/project.sourcecoe.git
