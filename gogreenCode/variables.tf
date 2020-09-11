@@ -33,7 +33,7 @@ variable "asg_desired" {
 
 variable "alarms_sms" {
   description = "sms to use to send notifications"
-  default     = "+12026300504"
+  default     = "+7033091494"
 }
 
 #Note - terraform doesnt support email as SNS requires validation
