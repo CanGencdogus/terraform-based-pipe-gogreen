@@ -17,6 +17,14 @@ phases:
       - terraform init -input=false
       - terraform plan -input=false
       - terraform apply -auto-approve
+      - cd $CODEBUILD_SRC_DIR/gogreenCode/modules/bootstrap
+      - terraform init -input=false
+      - terraform plan -input=false
+      - terraform apply -auto-approve
+      - cd $CODEBUILD_SRC_DIR/gogreenCode/modules/vpc
+      - terraform init -input=false
+      - terraform plan -input=false
+      - terraform apply -auto-approve
   post_build:
     commands:
       - echo "terraform plan completed on `date`"
