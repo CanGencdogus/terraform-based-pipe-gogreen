@@ -43,7 +43,7 @@ resource "aws_kms_key" "replica" {
 }
 
 module "log_bucket" {
-  source = "git@github.com:rpaskalev/project.sourcecoe.git"
+  source = "https://github.com/rpaskalev/project.sourcecoe.git"
   
 
   bucket                         = "logs-gogreen"
@@ -52,7 +52,7 @@ module "log_bucket" {
   attach_elb_log_delivery_policy = true
 }
 module "replica_bucket" {
-  source = "git@github.com:rpaskalev/project.sourcecoe.git"
+  source = "https://github.com/rpaskalev/project.sourcecoe.git"
 
   providers = {
     aws = aws.replica
@@ -67,7 +67,7 @@ module "replica_bucket" {
 }
 
 module "s3_bucket" {
-  source = "git@github.com:rpaskalev/project.sourcecoe.git"
+  source = "https://github.com/rpaskalev/project.sourcecoe.git"
 
   bucket = local.bucket_name
   acl    = "private"
