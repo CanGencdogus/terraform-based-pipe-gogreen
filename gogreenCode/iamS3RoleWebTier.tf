@@ -1,4 +1,18 @@
+#module "s3-bucket" {
+#  source = "./modules/bootstrap"
+#}
 
+# s3 bucket rady
+
+#resource "aws_s3_bucket" "gogreen" {
+#  bucket = "raduchoio-bucket-102"
+#  acl    = "private"
+
+ # tags = {
+ #   Name        = "My tf bucket"
+ #   Environment = "dev"
+ # }
+#}
 #data "aws_caller_identity" "current" {}
 
 resource "aws_iam_instance_profile" "s3-profile" {
@@ -45,8 +59,8 @@ resource "aws_iam_policy" "s3-policy" {
       ],
       "Effect": "Allow",
       "Resource": [
-          "${aws_s3_bucket.gogreen.arn}",
-          "${aws_s3_bucket.gogreen.arn}/*",
+          "arn:aws:s3:::${local.bucket_name}",
+          "arn:aws:s3:::${local.bucket_name}/*",
           "*"
       ]
     }
